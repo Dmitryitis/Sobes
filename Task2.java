@@ -25,9 +25,6 @@ public class Task2 {
         }
 
         map.entrySet().stream().sorted(Map.Entry.<String, Integer>comparingByValue().reversed()).forEach(System.out::println);
-        for (Map.Entry<String, Integer> s : map.entrySet()){
-            System.out.println(s.getKey());
-            System.out.println(s.getValue());
-        }
+     
     }
 }
